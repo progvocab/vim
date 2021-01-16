@@ -2,6 +2,7 @@
 autocmd FileType java nmap <buffer> <F5> :w<bar> ! python /f/progvocab/repo/vim-extension/scripts/javaTemplates.py <cword>  >> % <CR>
 autocmd FileType java nmap <buffer> <F5> :w<bar> ! python /f/progvocab/repo/vim-extension/scripts/javaTemplates.py <cword>  >> % <CR>
 set autoread
+source ~/.vim/goFuncs.vim
 function! Class()
     r~/.vim/templates/java/class.txt
 endfunction
